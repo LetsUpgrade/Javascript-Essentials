@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#text{
+    padding: 30px;
+    background-color: wheat;
+    max-height: 250px;
+    overflow: hidden;
+
+    transition: max-height 0.8s;
+
+}
+
+#text.show{
+    max-height: 1500px;
+
+    transition: max-height 0.8s;
+}
