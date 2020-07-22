@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms2
+    </title>
+</head>
+<body>
+    
+    <form action="#" id="myForm" name="myForm" onsubmit="return validation()">
+
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+            <span id="namemsg" style="color:red"></span>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email">
+            <span id="emailmsg" style="color:red"></span>
+        </div>
+        <div>
+            <label for="pass">Password</label>
+            <input type="text" name="pass" id="pass">
+            <span id="passmsg" style="color:red"></span>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="Submit">
+        </div>
+        <div>
+            <p style="color:red" id="msg"></p>
+        </div>
+
+    </form>
+
+
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+body{
+    background-color: gainsboro;;
+}
+
+.dragZone,.dropZone{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: white;
+}
+
+.image{
+    background:url('test.jpg');
+    height: 140px;
+    width: 140px;
+    position: relative;
+    left: 5px;
+    top:5px ;
+}
