@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title>Letsupgrade-Javascript/Essential/Assignment
+		</title>
+		
+</head>
+<body>
+	<script>
+	//1.Program to search for a particular character in a String
+		let str = "Letsupgrade";
+        let res = str.charAt(5);
+        console.log(res);
+
+    //2.Program to convert minutes to seconds
+    let minutes=2
+    let seconds = minutes * 60;
+    console.log("seconds="+seconds);
+
+    //3.Program to search for a element in a array of string
+    let arr=["javascript","python","go","java"]
+    let a1 = arr.indexOf("go");
+    console.log(a1);
+
+    //4.Program to display only elements containing 'a' in the from a array
+    let a= ["apple","banana","chickoo","papaya"];
+    console.log("array=" +a);
+
+    //5.Print an array in reverse order
+    let b=["hyderabad","warangal","mahabubabad"]
+    console.log("rev of b=" +b.reverse());
+
+		</script>
+	
+
+</body>
+</html>
