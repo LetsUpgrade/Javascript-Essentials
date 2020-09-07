@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .login {
+        height: 400px;
+        width: 400px;
+        background-color: blueviolet;
+      }
+      .form-group {
+        padding: 20px;
+      }
+
+      .input {
+        height: 40px;
+        width: 80%;
+        text-indent: 20px;
+        font-size: 18px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="login">
+      <div class="form-group">
+        <input type="text" class="input" placeholder="Username" />
+      </div>
+      <div class="form-group">
+        <input type="password" class="input" placeholder="Password" />
+        <button onmousedown="showPassword()" onmouseup="hidePassword()">
+          <img
+            width="30px"
+            src="https://banner2.cleanpng.com/20180409/geq/kisspng-computer-icons-eye-clip-art-eye-5acb3e384aa5c4.4631413615232691763058.jpg"
+          />
+        </button>
+      </div>
+      <div class="form-group">
+        <button>Login</button>
+      </div>
+    </div>
+
+    <script src="index2.js"></script>
+  </body>
+</html>
