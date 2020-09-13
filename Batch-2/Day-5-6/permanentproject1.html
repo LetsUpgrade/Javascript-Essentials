@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud Application</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .data {
+        height: 500px;
+        width: 80%;
+        background-color: lightgray;
+        margin-left: 10%;
+        margin-top: 50px;
+        padding: 20px;
+        display: inline-block;
+      }
+
+      .table {
+        width: 100%;
+        margin-top: 20px;
+        /* font-family: calibri; */
+      }
+      th,
+      td {
+        height: 40px;
+        text-align: center;
+        padding: 5px;
+      }
+
+      .form {
+        margin-top: 20px;
+      }
+      input {
+        height: 40px;
+        text-indent: 20px;
+      }
+
+      button {
+        padding: 10px;
+      }
+
+      .modal {
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        display: none;
+      }
+
+      .modalchild {
+        height: 200px;
+        width: 70%;
+        background-color: white;
+        margin-left: 15%;
+        margin-top: 100px;
+        display: inline-block;
+        padding: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="modal" onclick="hideModal(event)">
+      <div class="modalchild">
+        <div class="form">
+          <form onsubmit="updateSuperhero(event)">
+            <input type="text" required placeholder="Name" id="upname" />
+            <input type="number" required placeholder="Age" id="upage" />
+            <input type="text" required placeholder="Planet" id="upplanet" />
+            <input type="text" required placeholder="Height" id="upheight" />
+            <button type="submit">Update Superhero</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="data">
+      <h1>Superheroes</h1>
+
+      <div class="form">
+        <form onsubmit="addSuperhero(event)">
+          <input type="text" required placeholder="Name" id="name" />
+          <input type="number" required placeholder="Age" id="age" />
+          <input type="text" required placeholder="Planet" id="planet" />
+          <input type="text" required placeholder="Height" id="height" />
+          <button type="submit">Add Superhero</button>
+        </form>
+      </div>
+
+      <div class="form">
+        <input
+          type="text"
+          placeholder="Start Searching here"
+          id="searchName"
+          onkeyup="searchByName()"
+        />
+      </div>
+
+      <table border="1" class="table" cellspacing="0">
+        <thead>
+          <tr>
+            <th>Sr no</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Planet</th>
+            <th>Height</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody class="tdata" id="tdata"></tbody>
+      </table>
+    </div>
+
+    <script src="permanentproject1.js"></script>
+    <!-- <script src="example.js"></script> -->
+  </body>
+</html>
