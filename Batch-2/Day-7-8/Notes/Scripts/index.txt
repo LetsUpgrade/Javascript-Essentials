@@ -1,0 +1,32 @@
+// let counter = 1;
+// function doSomething() {
+//   console.log(counter);
+
+//   if (counter == 10) {
+//     clearInterval(timer);
+//   }
+
+//   counter++;
+// }
+
+// let timer = setInterval("doSomething()", 1000);
+
+// let t = setTimeout(function () {
+//   console.log("hello");
+// }, 10000);
+
+// function stopAdd() {
+//   clearTimeout(t);
+// }
+
+let currentDate = new Date();
+let currentTime = currentDate.toLocaleTimeString();
+
+document.getElementById("clock").innerHTML = currentTime;
+
+setInterval(function () {
+  let currentDate = new Date();
+  let currentTime = currentDate.toLocaleTimeString();
+
+  document.getElementById("clock").innerHTML = currentTime;
+}, 1000);

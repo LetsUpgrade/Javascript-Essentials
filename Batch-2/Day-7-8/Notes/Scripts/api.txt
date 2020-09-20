@@ -1,0 +1,30 @@
+// fetch
+
+// get request
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+//   .then((response) => {
+//     response.json().then((data) => {
+//       console.log(data);
+//     });
+//   })
+//   .catch((error) => {
+//     console.log(error);
+//   });
+
+// post request
+
+// fetch("https://jsonplaceholder.typicode.com/users", {
+//   method: "post",
+//   body: JSON.stringify({
+//     name: "Shubahm",
+//     username: "shubh",
+//   }),
+//   headers: {
+//     "Content-Type": "application/json",
+//   },
+// }).then((response) => {
+//   response.json().then((data) => {
+//     console.log(data);
+//   });
+// });
